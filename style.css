@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
 }
-/* hay que retirar los backgroun-color, que sean por nombre */
+
 body {
     background-color: whitesmoke;
 }
@@ -10,21 +10,24 @@ img {
     max-width: 100%;
     height: auto;
   }
-  /* Nav-menu */
 
-#img-log img{
+#img-log img {
+    width: 100%;
+    height: 100%;
+}
+#img-log2 img {
     width: 100%;
     height: 100%;
 }
 
 @media(max-width: 450px){
-    #img-log{
+    /* #img-log{
         min-width: 30px;
         height: 30px;
-    }
-    .nav-link {
+    } */
+    /* .nav-link {
         font-size: 3.5vw;
-    }
+    } */
     h1{
         font-size: 9vw;
     }
@@ -40,57 +43,24 @@ img {
     .start{
         width: 95%;
     }
-    #encabezado{
+    /* .encabezado{
         justify-content: space-around;
         padding: 0 1.7rem;
-    }
+    } */
     
 }
-@media(max-width: 300px){
+/* @media(max-width: 300px){
     .nav-link {
         font-size: 4vw;
     }
-    #encabezado{
+    .encabezado{
         padding: 0 0.5rem;
     }
-}
-@media(min-width:450px){
-    #img-log{
-        min-width: 50px;
-        height: 50px;
-    }
-    #encabezado{
-        padding: 0 3.5rem;
-        justify-content: space-between;
-    }
-}
+} */
 
 
-#encabezado{
-    width: 100%;
-    background-color: rgba(202, 212, 223, 0.966);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    height: 55px;
-}
-.nav-link {
-    text-decoration: none;
-    margin: 2vw;
-    color: rgb(17, 13, 34);
-}
-.nav-link:hover {
-    color: rgb(121, 9, 9);
-}
-.nav-link:visited {
-    color: rgba(1, 29, 29, 0.863);
-}
-.nav-link:visited:hover{
-    color: rgb(121, 9, 9);
-}
-  /* Fin nav-menu */
+
+/* Fin nav-menu */
 h1 {
    text-align: center;
    margin: 15px auto;
@@ -130,4 +100,123 @@ footer{
     background-color: rgba(157, 166, 175, 0.733);
     height: 30px;
     margin-top: 20px;
+}
+/*Burguer menu js*/
+.close{
+    display: none;
+}
+#btn-menu {
+    z-index: 200;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+@media (min-width:650px) {
+    #img-log2{
+        width: 50px;
+        height: 50px;
+    }
+    #img-log  {
+        display: none;
+    }
+    .pc{
+        display: none;
+    }
+    .encabezado{
+        padding: 0 3.5rem;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgba(202, 212, 223, 0.966);
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+        height: 55px;
+    }
+    .nav-link:hover {
+        color: rgb(121, 9, 9);
+    }
+    .nav-link:visited {
+        color: rgba(1, 29, 29, 0.863);
+    }
+    .nav-link:visited:hover{
+        color: rgb(121, 9, 9);
+    }
+    .nav-link {
+        text-decoration: none;
+        margin: 2vw;
+        margin-right: 0.7vw;
+        color: rgb(17, 13, 34);
+    }
+}
+
+@media (max-width: 650px) {
+    #img-log2{
+        display: none;
+    }
+    .encabezado {
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        z-index: 100;
+        margin-left: -100%;
+        position: fixed;
+        background-color: rgba(12, 17, 66, 0.993);
+    }
+    .nav-link:hover {
+        color: rgb(121, 9, 9);
+    }
+    .nav-link:visited {
+        color: rgba(209, 255, 230, 0.863);
+    }
+    .nav-link:visited:hover{
+        color: rgb(121, 9, 9);
+    }
+    #img-log{
+        width: 40px;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .show{
+        margin-left: 0;
+    }
+    .fas{
+        font-size: 40px;
+    }
+    #btn-menu{
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+    }
+    .nav-link{
+        display: block;
+        font-weight: bold;
+        background-color: rgb(8, 11, 43);
+        color: white;
+        border: 2px solid rgb(201, 178, 255);
+        border-collapse: collapse;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+    .h-menu{
+        display: flex;
+        top: 0;
+        vertical-align:top;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #img-log {
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #btn-menu {
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML y CSS de freecodecamp</title>
+    <script src="https://kit.fontawesome.com/f305e1078d.js" crossorigin="anonymous"></script>
     <link href="./style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./favicon-32x32.png">
 
 </head>
 <body>
     <div id="main">
-        <header id="encabezado">
+        <div class="h-menu">
             <figure id="img-log">
+                <img src="favicon-32x32.png" alt="Imagen de usuario">
+            </figure>
+            <button class="pc" id="btn-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times close"></i>
+            </button>
+        </div>
+        <header class="encabezado">
+            <figure id="img-log2">
                 <img src="favicon-32x32.png" alt="Imagen de usuario">
             </figure>
             <nav id="nav-bar">
@@ -52,5 +62,6 @@
             
         </footer>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
