@@ -21,13 +21,6 @@ img {
 }
 
 @media(max-width: 450px){
-    /* #img-log{
-        min-width: 30px;
-        height: 30px;
-    } */
-    /* .nav-link {
-        font-size: 3.5vw;
-    } */
     h1{
         font-size: 9vw;
     }
@@ -43,24 +36,7 @@ img {
     .start{
         width: 95%;
     }
-    /* .encabezado{
-        justify-content: space-around;
-        padding: 0 1.7rem;
-    } */
-    
 }
-/* @media(max-width: 300px){
-    .nav-link {
-        font-size: 4vw;
-    }
-    .encabezado{
-        padding: 0 0.5rem;
-    }
-} */
-
-
-
-/* Fin nav-menu */
 h1 {
    text-align: center;
    margin: 15px auto;
@@ -101,7 +77,14 @@ footer{
     height: 30px;
     margin-top: 20px;
 }
-/*Burguer menu js*/
+#btn-scroll{
+    position: fixed;
+    z-index: 100;
+    right: 15PX;
+    background-color: rgba(59, 91, 196, 0.74);
+    border-color: rgb(0, 42, 90);
+    border-radius: 10px;
+}
 .close{
     display: none;
 }
@@ -112,6 +95,15 @@ footer{
     cursor: pointer;
 }
 @media (min-width:650px) {
+    #btn-scroll{
+        width: 35px;
+        height: 50px;
+        bottom: 40px;
+    }
+    .fa-solid{
+        font-size: 35px;
+        color: rgb(20, 58, 128);
+    }
     #img-log2{
         width: 50px;
         height: 50px;
@@ -152,6 +144,15 @@ footer{
 }
 
 @media (max-width: 650px) {
+    #btn-scroll{
+        width: 25px;
+        height: 35px;
+        bottom: 20px;
+    }
+    .fa-solid{
+        font-size: 20px;
+        color: rgb(20, 58, 128);
+    }
     #img-log2{
         display: none;
     }
